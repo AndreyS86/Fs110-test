@@ -1,4 +1,4 @@
-const User = ({ name, email, bio }) => {
+const User = ({ name, email, bio = 'This user hide own bio' }) => {
   return (
     <div>
       <h3>{name}</h3>
@@ -8,5 +8,4 @@ const User = ({ name, email, bio }) => {
     </div>
   );
 };
-
 export default User;
