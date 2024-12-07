@@ -1,9 +1,33 @@
-const User = ({ name, email, bio = 'This user hide own bio' }) => {
+import clsx from "clsx";
+import styles from "./User.module.css";
+console.log(styles);
+
+const User = ({
+  name,
+  email,
+  isOpenToWork,
+  bio = "This user hide own bio",
+}) => {
   return (
-    <div>
-      <h3>{name}</h3>
+    <div className={styles.card}>
+      <h3 className={styles.title}>{name}</h3>
       <p>{email}</p>
       <p>{bio}</p>
+      {/* <p
+        className={`${styles.status} ${
+          isOpenToWork ? styles.green : styles.red
+        }`}
+      >
+        {isOpenToWork ? "Хоче рацювати" : "Не шукає роботу"}
+      </p> */}
+      <p
+        className={clsx(
+          styles.status,
+          isOpenToWork ? styles.green : styles.red
+        )}
+      >
+        {isOpenToWork ? "Хоче рацювати" : "Не шукає роботу"}
+      </p>
       <button>Delete</button>
     </div>
   );
