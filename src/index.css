@@ -1,0 +1,52 @@
+body {
+  font-family: sans-serif;
+  line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+:root {
+  --blue: gray;
+  --orange: orange;
+}
+
+.header {
+  background-color: var(--blue);
+  color: white;
+  font-size: 1.5rem;
+  padding: 20px;
+}
+
+.title {
+  text-align: center;
+  text-decoration: underline;
+  color: blue;
+}
+
+.wrapper {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 10px;
+  padding: 0;
+  margin: 0;
+}
