@@ -1,5 +1,6 @@
 import clsx from "clsx";
 import styles from "./User.module.css";
+import { FaUser } from "react-icons/fa";
 console.log(styles);
 
 const User = ({
@@ -10,7 +11,10 @@ const User = ({
 }) => {
   return (
     <div className={styles.card}>
-      <h3 className={styles.title}>{name}</h3>
+      <h3 className={styles.title}>
+        {name}
+        <FaUser className={styles.iconUser} />
+      </h3>
       <p>{email}</p>
       <p>{bio}</p>
       {/* <p
