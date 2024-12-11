@@ -4,12 +4,14 @@ import Message from "./components/Message/message";
 import User from "./components/User/User";
 import WelcomeSection from "./components/WelcomeComponents/WelcomeSection";
 import usersData from "./assets/users";
+// import Test from "./components/Test/Test";
+import Counter from "./components/Counter/Counter";
 
 0;
 const App = () => {
   return (
     <>
-      <Header />
+      {/* <Header /> */}
       {/* <h3>Tag</h3>
       {isOnline && <h2>Hello</h2>}
       {isLoggedIn && <h2>Welcome</h2>}
@@ -22,9 +24,12 @@ const App = () => {
           <li>{value}</li>
         ))} */}
 
-        {usersData.map((user) => (
+        {/* {usersData.map((user) => (
           <User key={user.id} {...user} />
-        ))}
+        ))} */}
+        {/* <Test /> */}
+
+        <Counter />
       </ul>
     </>
   );
