@@ -6,6 +6,7 @@ import WelcomeSection from "./components/WelcomeComponents/WelcomeSection";
 import usersData from "./assets/users";
 // import Test from "./components/Test/Test";
 import Counter from "./components/Counter/Counter";
+import ColorPicker from "./components/ColorPicker/ColorPicker";
 
 0;
 const App = () => {
@@ -29,7 +30,8 @@ const App = () => {
         ))} */}
         {/* <Test /> */}
 
-        <Counter />
+        {/* <Counter /> */}
+        <ColorPicker />
       </ul>
     </>
   );

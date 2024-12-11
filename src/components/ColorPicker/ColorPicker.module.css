@@ -1,0 +1,19 @@
+.list {
+  list-style: none;
+  display: flex;
+  gap: 10px;
+}
+
+.item {
+  width: 120%;
+  padding: 10px;
+  border: solid 2px black;
+  border-radius: 5px;
+}
+
+.bgWrapper {
+  display: grid;
+  place-content: center;
+  height: 100vh;
+  transition: background-color 1.5s linear;
+}
