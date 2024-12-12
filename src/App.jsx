@@ -7,6 +7,8 @@ import usersData from "./assets/users";
 // import Test from "./components/Test/Test";
 import Counter from "./components/Counter/Counter";
 import ColorPicker from "./components/ColorPicker/ColorPicker";
+import Todolist from "./components/Todolist/Todolist";
+import TodoList from "./components/Todolist/Todolist";
 
 0;
 const App = () => {
@@ -31,7 +33,8 @@ const App = () => {
         {/* <Test /> */}
 
         {/* <Counter /> */}
-        <ColorPicker />
+        {/* <ColorPicker /> */}
+        <TodoList />
       </ul>
     </>
   );
